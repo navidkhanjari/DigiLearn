@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Common.Application.FileUtil.Services
 {
 
-    public class LocalFileService
+    public class LocalFileService:ILocalFileService
     {
         public void DeleteDirectory(string directoryPath)
         {

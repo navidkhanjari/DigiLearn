@@ -2,6 +2,7 @@
 using BlogModule.Repositories.Categories;
 using BlogModule.Repositories.Posts;
 using BlogModule.Services;
+using Common.Application.FileUtil.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -26,8 +27,11 @@ namespace BlogModule
 
             #region services
             services.AddScoped<IBlogService, BlogService>();
+            services.AddScoped<ILocalFileService, ILocalFileService>();
             #endregion
+
             services.AddAutoMapper(typeof(MapperProfile).Assembly);
+
             return services;
         }
     }
