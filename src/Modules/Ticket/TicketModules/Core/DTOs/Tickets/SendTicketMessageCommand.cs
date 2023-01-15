@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TicketModules.Core.DTOs.Tickets
 {
-    public class SendTicketMessage
+    public class SendTicketMessageCommand
     {
         public Guid UserId { get; set; }
         public Guid TicketId { get; set; }
