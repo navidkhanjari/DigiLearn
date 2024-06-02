@@ -1,4 +1,5 @@
 ﻿using Common.Domain;
+using UserModule.Data.Entities.Roles;
 
 namespace UserModule.Data.Entities.Users
 {

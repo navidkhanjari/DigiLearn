@@ -1,6 +1,4 @@
-﻿using Common.Query.Filter;
-
-namespace UserModule.Core.Queries._DTOs
+﻿namespace UserModule.Core.Queries._DTOs
 {
     public class UserDto
     {
@@ -15,6 +13,4 @@ namespace UserModule.Core.Queries._DTOs
         public List<RoleDto> Roles { get; set; } = new();
         public string FullName => $"{Name} {Family}";
     }
-
-    
 }
